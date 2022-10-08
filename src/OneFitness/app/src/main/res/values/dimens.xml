@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_textview_size">30sp</dimen>
+    <dimen name="small_textview_size">15sp</dimen>
+    <dimen name="main_imageview_size">65dp</dimen>
+    <dimen name="small_imageview_size">20dp</dimen>
+    <dimen name="large_textview_size">60sp</dimen>
+    <dimen name="large_text_constraint">64dp</dimen>
+    <dimen name="medium_textview_size">22sp</dimen>
+</resources>

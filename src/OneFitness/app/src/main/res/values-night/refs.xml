@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="distanceImage">@drawable/distance_dark</drawable>
+    <drawable name="caloriesImage">@drawable/calories_dark</drawable>
+    <drawable name="feetImage">@drawable/feet_dark</drawable>
+    <drawable name="paceImage">@drawable/pace_dark</drawable>
+    <drawable name="runningImage">@drawable/running_dark</drawable>
+    <drawable name="cyclingImage">@drawable/cycling_dark</drawable>
+    <drawable name="profileImage">@drawable/profile_dark</drawable>
+</resources>
+
