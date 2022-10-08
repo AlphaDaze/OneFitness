@@ -1,6 +1,12 @@
 <br />
 <br />
 
+<p align="center">
+  <a href="https://github.com/AlphaDaze/OneFitness/">
+    <img src="https://i.imgur.com/iQRsTOu.png" alt="OneFitness Red Logo" width="80" height="80">
+  </a>
+</p>
+
 <h1 align="center">
   OneFitness - Fitness Tracking App
 </h1>
@@ -8,14 +14,9 @@
 <br />
 
 <p align="center">
+  <img alt="license" src="https://img.shields.io/badge/Java-B9291D">
   <img alt="license" src="https://img.shields.io/github/license/AlphaDaze/word-search-solver">
 </p>
-
-<h5 align="center">
-  <b>
-      Developed using Java.
-  </b>
-</h5>
 
 <br />
 
