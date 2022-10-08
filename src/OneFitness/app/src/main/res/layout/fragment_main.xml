@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stepsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/steps_textview"
+        android:textSize="@dimen/small_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsImageView" />
+
+    <TextView
+        android:id="@+id/stepsCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/loading"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/stepsImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/caloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/calories_textview"
+        android:textSize="@dimen/small_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesImageView" />
+
+    <TextView
+        android:id="@+id/caloriesCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="78dp"
+        android:text="@string/loading"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/caloriesImageView"
+        app:layout_constraintTop_toBottomOf="@+id/stepsCnt" />
+
+    <TextView
+        android:id="@+id/distanceCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="81dp"
+        android:text="@string/loading"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/distanceImageView"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesCnt" />
+
+    <TextView
+        android:id="@+id/ditanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/distance_textview"
+        android:textSize="@dimen/small_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceImageView" />
+
+    <TextView
+        android:id="@+id/constkmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/_km"
+        android:textSize="@dimen/small_textview_size"
+        app:layout_constraintEnd_toEndOf="@+id/distanceCnt"
+        app:layout_constraintStart_toStartOf="@+id/distanceCnt"
+        app:layout_constraintTop_toBottomOf="@+id/distanceCnt" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/half_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="366dp" />
+
+    <ImageView
+        android:id="@+id/stepsImageView"
+        android:layout_width="@dimen/main_imageview_size"
+        android:layout_height="@dimen/main_imageview_size"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/steps_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feetImage" />
+
+    <ImageView
+        android:id="@+id/caloriesImageView"
+        android:layout_width="@dimen/main_imageview_size"
+        android:layout_height="@dimen/main_imageview_size"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/calories_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsTextView"
+        app:srcCompat="@drawable/caloriesImage" />
+
+    <ImageView
+        android:id="@+id/distanceImageView"
+        android:layout_width="@dimen/main_imageview_size"
+        android:layout_height="@dimen/main_imageview_size"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/distance_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesTextView"
+        app:srcCompat="@drawable/distanceImage" />
+
+    <ImageButton
+        android:id="@+id/sessionButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:background="@xml/rounded_corner"
+        android:contentDescription="@string/start_session"
+        android:padding="18dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ditanceTextView"
+        app:srcCompat="@drawable/session" />
+
+    <ProgressBar
+        android:id="@+id/stepsProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="32dp"
+        android:progressDrawable="@drawable/custom_progressbar"
+        app:layout_constraintBottom_toBottomOf="@+id/stepsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stepsTextView"
+        app:layout_constraintTop_toTopOf="@+id/stepsTextView" />
+
+    <ProgressBar
+        android:id="@+id/caloriesProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:progressDrawable="@drawable/custom_progressbar"
+        app:layout_constraintBottom_toBottomOf="@+id/caloriesTextView"
+        app:layout_constraintEnd_toEndOf="@+id/stepsProgress"
+        app:layout_constraintStart_toStartOf="@+id/stepsProgress"
+        app:layout_constraintTop_toTopOf="@+id/caloriesTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

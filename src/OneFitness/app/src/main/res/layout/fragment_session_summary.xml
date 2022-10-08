@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".session.SessionSummaryFragment">
+
+
+    <ImageView
+        android:id="@+id/speedImageView"
+        android:layout_width="@dimen/small_imageview_size"
+        android:layout_height="@dimen/small_imageview_size"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/calories_textview"
+        app:layout_constraintBottom_toBottomOf="@+id/constSpeedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constSpeedText"
+        app:srcCompat="@drawable/paceImage" />
+
+    <ImageView
+        android:id="@+id/stepsImageView"
+        android:layout_width="@dimen/small_imageview_size"
+        android:layout_height="@dimen/small_imageview_size"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/calories_textview"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/constStepsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constStepsText"
+        app:srcCompat="@drawable/feetImage" />
+
+    <ImageView
+        android:id="@+id/distanceImageView"
+        android:layout_width="@dimen/small_imageview_size"
+        android:layout_height="@dimen/small_imageview_size"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/distance_textview"
+        app:layout_constraintBottom_toBottomOf="@+id/distanceConst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/distanceConst"
+        app:srcCompat="@drawable/distanceImage" />
+
+    <ImageView
+        android:id="@+id/caloriesImageView"
+        android:layout_width="@dimen/small_imageview_size"
+        android:layout_height="@dimen/small_imageview_size"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/calories_textview"
+        app:layout_constraintBottom_toBottomOf="@+id/calConst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calConst"
+        app:srcCompat="@drawable/caloriesImage" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/title"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_00_00"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintBottom_toBottomOf="@+id/titleText"
+        app:layout_constraintEnd_toEndOf="@+id/distanceText"
+        app:layout_constraintStart_toStartOf="@+id/distanceText"
+        app:layout_constraintTop_toTopOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/date"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/distanceConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/distance_textview"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/distanceImageView"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:gravity="center"
+        android:text="@string/_0_00"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintBottom_toBottomOf="@+id/distanceConst"
+        app:layout_constraintStart_toEndOf="@+id/distanceConst"
+        app:layout_constraintTop_toTopOf="@+id/distanceConst" />
+
+    <TextView
+        android:id="@+id/constkmDistText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_km"
+        app:layout_constraintEnd_toEndOf="@+id/distanceText"
+        app:layout_constraintStart_toStartOf="@+id/distanceText"
+        app:layout_constraintTop_toBottomOf="@+id/distanceText" />
+
+    <TextView
+        android:id="@+id/calConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/large_text_constraint"
+        android:text="@string/calories_textview"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/caloriesImageView"
+        app:layout_constraintTop_toBottomOf="@+id/distanceConst" />
+
+    <TextView
+        android:id="@+id/calText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintBottom_toBottomOf="@+id/calConst"
+        app:layout_constraintEnd_toEndOf="@+id/speedText"
+        app:layout_constraintStart_toStartOf="@+id/speedText"
+        app:layout_constraintTop_toTopOf="@+id/calConst" />
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="@dimen/main_textview_size"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/constStepsText"
+        app:layout_constraintEnd_toEndOf="@+id/speedText"
+        app:layout_constraintStart_toStartOf="@+id/speedText"
+        app:layout_constraintTop_toTopOf="@+id/constStepsText" />
+
+    <TextView
+        android:id="@+id/constCalsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/cals"
+        app:layout_constraintEnd_toEndOf="@+id/calText"
+        app:layout_constraintStart_toStartOf="@+id/calText"
+        app:layout_constraintTop_toBottomOf="@id/calText" />
+
+    <TextView
+        android:id="@+id/constSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/large_text_constraint"
+        android:text="@string/pace"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toEndOf="@+id/speedImageView"
+        app:layout_constraintTop_toBottomOf="@+id/calConst" />
+
+    <TextView
+        android:id="@+id/constStepsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/steps_textview"
+        android:textSize="@dimen/medium_textview_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/stepsImageView"
+        app:layout_constraintTop_toBottomOf="@+id/constSpeedText" />
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/_00_00"
+        android:textSize="@dimen/main_textview_size"
+        app:layout_constraintBottom_toBottomOf="@+id/constSpeedText"
+        app:layout_constraintEnd_toEndOf="@+id/distanceText"
+        app:layout_constraintStart_toStartOf="@+id/distanceText"
+        app:layout_constraintTop_toTopOf="@+id/constSpeedText" />
+
+    <TextView
+        android:id="@+id/constSpeedLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/paceKm"
+        app:layout_constraintEnd_toEndOf="@+id/speedText"
+        app:layout_constraintStart_toStartOf="@+id/speedText"
+        app:layout_constraintTop_toBottomOf="@+id/speedText" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

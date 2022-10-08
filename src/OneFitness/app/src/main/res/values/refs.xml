@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="distanceImage">@drawable/distance</drawable>
+    <drawable name="caloriesImage">@drawable/calories</drawable>
+    <drawable name="feetImage">@drawable/feet</drawable>
+    <drawable name="paceImage">@drawable/pace</drawable>
+    <drawable name="homeImage">@drawable/home</drawable>
+    <drawable name="journalImage">@drawable/journal</drawable>
+    <drawable name="runningImage">@drawable/running</drawable>
+    <drawable name="cyclingImage">@drawable/cycling</drawable>
+    <drawable name="profileImage">@drawable/profile</drawable>
+</resources>
+

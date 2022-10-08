@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".session.SessionFragment"
+    android:padding="32dp">
+
+
+    <FrameLayout
+        android:id="@+id/profileImageFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.master.glideimageview.GlideImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profileImage"
+            app:error_res="@drawable/no_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/profileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/profile"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImageFrame"
+        app:layout_constraintStart_toEndOf="@+id/profileImageFrame"
+        app:layout_constraintTop_toTopOf="@+id/profileImageFrame" />
+
+    <View
+        android:id="@+id/constGoalsDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalsTextView" />
+
+    <TextView
+        android:id="@+id/goalsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/goals"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageFrame" />
+
+    <TextView
+        android:id="@+id/constSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/steps_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalsTextView" />
+
+    <TextView
+        android:id="@+id/constCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="@string/calories_textview"
+        app:layout_constraintBottom_toBottomOf="@+id/constSteps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constSteps"
+        app:layout_constraintTop_toTopOf="@+id/constSteps" />
+
+    <TextView
+        android:id="@+id/stepsGoal"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/dropdown_arrow"
+        android:drawablePadding="5dp"
+        android:text="@string/_0"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/constSteps"
+        app:layout_constraintTop_toBottomOf="@+id/constSteps"/>
+
+
+    <TextView
+        android:id="@+id/caloriesGoal"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/dropdown_arrow"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:text="@string/_0"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/constCalories"
+        app:layout_constraintTop_toBottomOf="@+id/constCalories"/>
+
+    <TextView
+        android:id="@+id/constAboutYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="About"
+        android:textSize="@dimen/medium_textview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsGoal" />
+
+    <View
+        android:id="@+id/constFitnessDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constAboutYou" />
+
+    <TextView
+        android:id="@+id/constWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constFitnessDivider" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/dropdown_arrow"
+        android:drawablePadding="5dp"
+        android:text="@string/_0"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/constWeight"
+        app:layout_constraintTop_toBottomOf="@+id/constWeight" />
+
+    <TextView
+        android:id="@+id/constHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Height"
+        app:layout_constraintBottom_toBottomOf="@+id/constWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constWeight"
+        app:layout_constraintTop_toTopOf="@+id/constWeight" />
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/dropdown_arrow"
+        android:drawablePadding="5dp"
+        android:text="@string/_0"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/constHeight"
+        app:layout_constraintTop_toBottomOf="@+id/constHeight" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
