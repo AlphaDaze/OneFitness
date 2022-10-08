@@ -40,7 +40,7 @@ I logged everything I did in a [document](https://github.com/AlphaDaze/OneFitnes
 
 ## Documentation
 
-This app can be made again by following the development log. This document should also make it easier to add features and debug the app.
+This app can be made again by following the [development log](https://github.com/AlphaDaze/OneFitness/blob/main/OneFitness%20Build%20Log.pdf). This document should also make it easier to add features and debug the app.
 
 ## Getting Started
 
