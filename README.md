@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/AlphaDaze/OneFitness/">
-    <img src="https://i.imgur.com/iQRsTOu.png" alt="OneFitness Red Logo" width="80" height="80">
+    <img src="https://github.com/AlphaDaze/OneFitness/blob/main/images/logo.png?raw=true" alt="OneFitness Red Logo" width="80" height="80">
   </a>
 </p>
 
@@ -20,7 +20,7 @@ I started this project in November 2019 and completed it in February 2020. The p
 
 The app requires a Google account sign-in and lets you sync data such as weight and height as well as allowing real time tracking with Google Maps.
 
-I logged everything I did in a [document](). This app can be recreated using this document file.
+I logged everything I did in a [document](https://github.com/AlphaDaze/OneFitness/blob/main/OneFitness%20Build%20Log.pdf). This app can be recreated using this document file.
 
 ### Features
 
@@ -33,7 +33,7 @@ I logged everything I did in a [document](). This app can be recreated using thi
 - Login with Google
 
 <p align="center">
-  <img src="https://s4.gifyu.com/images/ezgif.com-gif-makerbd442116522eee39.gif" />
+  <img src="https://github.com/AlphaDaze/OneFitness/blob/main/images/showcase.gif?raw=true" />
 </p>
 
 <!-- DOCUMENTATION -->
