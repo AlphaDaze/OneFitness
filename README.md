@@ -13,7 +13,7 @@
 
 <h5 align="center">
   <b>
-      Developed using the Java.
+      Developed using Java.
   </b>
 </h5>
 
@@ -49,14 +49,23 @@ This app can be made again by following the development log. This document shoul
 
 ## Getting Started
 
-**1. Add debug key details**
+**1. Add keys**
 
 Open src/OneFitness in Android Studio
+
 Add directory to debug.keystore
 
 ```
 ├── src/OneFitness
 │         └── build.gradle <–––
+└── ...
+```
+
+Add Google Maps API key
+
+```
+├── src/OneFitness/app/src/debug/res/values/
+│                   └── google_maps_api.xml <–––
 └── ...
 ```
 
@@ -71,6 +80,7 @@ Build and run the app!
 ## Requirements
 
 - [Android Studio](https://developer.android.com/studio)
+- [Google Maps Key](https://developers.google.com/maps/documentation/android/signup)
 - Andriod SDK 29+
 
 <!-- CONTACT -->
